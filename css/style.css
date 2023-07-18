@@ -73,29 +73,159 @@ body {
     color: black;
     padding-left: 12px;
 }
- /* responsive style  */
- /* for smaller device */
- @media screen and (max-width:576px) {
-    .nav-container{
+
+
+/* banner part style  */
+.banner{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 240px;
+}
+
+
+.banner-left {
+    width: 50%;
+}
+
+.banner-sub-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    /* background-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-bottom: 24px;
+}
+
+.banner-left-list li {
+    list-style: none;
+    padding-bottom: 17px;
+}
+.banner-left-list>ul{
+    margin-left: 10px;
+}
+.banner-left-list a {
+    text-decoration: none;
+    color: #534C64;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.banner-left-list .fa-circle-play,
+.fa-download,
+.fa-gamepad{
+    color: black;
+}
+
+.signin,
+.go-rough {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 21px 40px;
+    border: 0;
+    margin-top: 20px;
+    margin-right:24px ;
+}
+
+.signin {
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+
+.go-rough {
+    border-radius: 48px;
+    background: #4EC5F7;
+}
+
+.banner-right {
+    width: 50%;
+}
+.banner-right img{
+    width: 100%;
+}
+
+/* responsive style  */
+/* for smaller device */
+@media screen and (max-width:576px) {
+    /* nav part  */
+    .nav-container {
         flex-direction: column;
         padding: 20px;
+        box-shadow: none;
     }
-    .logo{
-        justify-content: center ;
+
+    .logo {
+        justify-content: center;
     }
-    .logo-title{
+
+    .logo-title {
         padding-left: 10px;
     }
-    .menu>ul{
+
+    .menu>ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
+
     .menu li {
         margin-right: 0;
     }
-    .menu .dev{
+
+    .menu .dev {
         padding: 15px 0 20px 0;
     }
- }
+
+    /* banner part  */
+    .banner{
+        background-image: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .banner-left{
+        width: 100%;
+        margin-top: 24px;
+        background-image: url("../images/Group\ 14.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding: 70px 0 70px 0;
+    }
+    .banner-right {
+        width: 100%;
+    }
+    .banner-sub-title,.banner-title {
+       text-align: center;
+    }
+    .banner-left-list > ul {
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .signin,
+    .go-rough{
+       margin-right: 0px;
+       padding-left: 30px;
+    }
+}
