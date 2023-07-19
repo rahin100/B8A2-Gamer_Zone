@@ -507,7 +507,8 @@ body {
 .career-right {
     width: 50%;
 }
-.career-right img {
+.career-right img{
+    padding-top: 20px;
     width: 100%;
 }
 
