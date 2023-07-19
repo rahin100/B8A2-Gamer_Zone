@@ -208,7 +208,7 @@ body {
     text-align: end;
 }
 
-.knowmore{
+.knowmore {
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
@@ -238,6 +238,90 @@ body {
 
 .we-are-gamer-right {
     width: 50%;
+}
+
+/* online-games part style  */
+.online-games{
+    padding: 120px 0 120px 0;
+}
+.online-games-top-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.online-games-top-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 48px;
+}
+
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.online-games-img-container {
+    display: flex;
+    padding: 0 240px;
+    gap: 20px;
+}
+
+.img1 img {
+    width: 100%;
+}
+
+.img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.img1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 63px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(-500px);
+    transition: .9s;
+    border-radius: 10px;
+
+}
+
+.img1:hover .overlay {
+    transform: translateX(0);
+    transition: 1s;
+    
+}
+
+.ov-mid {
+    width: 100%;
+}
+
+.ov-mid a {
+    height: 37px;
+    width: 37px;
+    line-height: 37px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    font-size: 40px;
+    display: block;
+    padding-top: 50%;
+}
+
+.online-games-img-description {
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 /* responsive style  */
@@ -317,28 +401,51 @@ body {
     }
 
     /* we-are-gamer part  */
-    .we-are-gamer-container{
+    .we-are-gamer-container {
         flex-direction: column;
         padding: 20px;
         background: none;
     }
-    
-    .we-are-gamer-left{
+
+    .we-are-gamer-left {
         width: 100%;
     }
-    .we-are-gamer-right{
+
+    .we-are-gamer-right {
         width: 100%;
     }
-    .we-are-gamer-right-title,.know_more,.ourpurpose{
+
+    .we-are-gamer-right-title,
+    .know_more,
+    .ourpurpose {
         text-align: center;
     }
-    .we-are-gamer-right-description{
-        text-align:center;
+
+    .we-are-gamer-right-description {
+        text-align: center;
         text-align: justify;
     }
-    .unleash{
+
+    .unleash {
         text-align: center;
         font: 26px;
     }
-    
+
+    /* online-games part style  */
+    .online-games{
+        padding: 50px 0 50px 0;
+    }
+    .online-games-img-container{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .img1{
+        padding-bottom: 60px;
+    }
+    .online-games-img-description{
+        text-align: center;
+    }
+    .img1 .overlay{
+        bottom: 124px;
+    }
 }
