@@ -76,11 +76,12 @@ body {
 
 
 /* banner part style  */
-.banner{
+.banner {
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
     background-size: 50%;
 }
+
 .banner-container {
     display: flex;
     justify-content: space-between;
@@ -115,9 +116,11 @@ body {
     list-style: none;
     padding-bottom: 17px;
 }
-.banner-left-list>ul{
+
+.banner-left-list>ul {
     margin-left: 10px;
 }
+
 .banner-left-list a {
     text-decoration: none;
     color: #534C64;
@@ -129,7 +132,7 @@ body {
 
 .banner-left-list .fa-circle-play,
 .fa-download,
-.fa-gamepad{
+.fa-gamepad {
     color: black;
 }
 
@@ -142,7 +145,8 @@ body {
     padding: 21px 40px;
     border: 0;
     margin-top: 20px;
-    margin-right:24px ;
+    margin-right: 24px;
+    cursor: pointer;
 }
 
 .signin {
@@ -158,13 +162,88 @@ body {
 .banner-right {
     width: 50%;
 }
-.banner-right img{
+
+.banner-right img {
     width: 100%;
+}
+
+/* we-are-gamer part style  */
+.we-are-gamer-container {
+    display: flex;
+    align-items: center;
+    padding: 95px 240px 96px 240px;
+    gap: 30px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+
+.we-are-gamer-left {
+    width: 50%;
+}
+
+.we-are-gamer-left img {
+    width: 100%;
+}
+
+.we-are-gamer-right-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-bottom: 24px;
+}
+
+.we-are-gamer-right-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.know_more {
+    text-align: end;
+}
+
+.knowmore{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 21px 40px;
+    border: 0;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.ourpurpose {
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.unleash {
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.we-are-gamer-right {
+    width: 50%;
 }
 
 /* responsive style  */
 /* for smaller device */
 @media screen and (max-width:576px) {
+
     /* nav part  */
     .nav-container {
         flex-direction: column;
@@ -196,14 +275,16 @@ body {
     }
 
     /* banner part  */
-    .banner{
+    .banner {
         background-image: none;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
         padding: 20px;
     }
-    .banner-left{
+
+    .banner-left {
         width: 100%;
         margin-top: 24px;
         background-image: url("../images/Group\ 14.png");
@@ -211,21 +292,53 @@ body {
         background-position: right center;
         padding: 70px 0 70px 0;
     }
+
     .banner-right {
         width: 100%;
     }
-    .banner-sub-title,.banner-title {
-       text-align: center;
-    }
-    .banner-left-list > ul {
+
+    .banner-sub-title,
+    .banner-title {
         text-align: center;
     }
-    .button{
+
+    .banner-left-list>ul {
         text-align: center;
     }
+
+    .button {
+        text-align: center;
+    }
+
     .signin,
-    .go-rough{
-       margin-right: 0px;
-       padding-left: 30px;
+    .go-rough {
+        margin-right: 0px;
+        padding-left: 30px;
     }
+
+    /* we-are-gamer part  */
+    .we-are-gamer-container{
+        flex-direction: column;
+        padding: 20px;
+        background: none;
+    }
+    
+    .we-are-gamer-left{
+        width: 100%;
+    }
+    .we-are-gamer-right{
+        width: 100%;
+    }
+    .we-are-gamer-right-title,.know_more,.ourpurpose{
+        text-align: center;
+    }
+    .we-are-gamer-right-description{
+        text-align:center;
+        text-align: justify;
+    }
+    .unleash{
+        text-align: center;
+        font: 26px;
+    }
+    
 }
