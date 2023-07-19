@@ -290,15 +290,15 @@ body {
     right: 0;
     bottom: 63px;
     background: rgba(0, 0, 0, 0.8);
-    transform: translateX(-500px);
+    transform: translateY(-500px);
     transition: .9s;
     border-radius: 10px;
 
 }
 
 .img1:hover .overlay {
-    transform: translateX(0);
-    transition: 1s;
+    transform: translateY(0);
+    border: 2px solid #FF42A5;
 
 }
 
@@ -440,6 +440,46 @@ body {
     bottom: -90px;
 }
 
+/* important-link part style  */
+.important-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 120px 240px;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+}
+
+.img2 {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    border-radius: 50px;
+    transition: 1s;
+    margin-bottom: 40px;
+    padding-left: 5px;
+}
+
+.img2:hover {
+    border: 1px solid #FF42A5;
+    transform: scale(1.1);
+}
+
+.img2:hover .img2-title {
+
+    color: #F948B2;
+    transform: scale(1.1);
+}
+
+.img2-title {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    transition: 1s;
+}
+
 /* footer part style  */
 .footer {
     background-color: #0B0223;
@@ -536,38 +576,43 @@ body {
     transform: scale(1.8);
 }
 
-.footer-submenu{
+.footer-submenu {
     padding-bottom: 28px;
 }
+
 .footer-submenu>ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-submenu li{
+
+.footer-submenu li {
     list-style: none;
     margin-right: 60px;
 }
-.footer-submenu a{
+
+.footer-submenu a {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
 }
-.footer-copyright{
-   padding-bottom: 120px;
+
+.footer-copyright {
+    padding-bottom: 120px;
 }
-.footer-copyright p{
+
+.footer-copyright p {
     text-align: center;
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
 }
+
 /* responsive style  */
 /* for smaller device */
 @media screen and (max-width:576px) {
-
     /* nav part  */
     .nav-container {
         flex-direction: column;
@@ -798,68 +843,109 @@ body {
     .play-instantly1-left-sub-img {
         width: 120px;
         height: 173px;
-        left: -5px;
+        right: -5px;
         bottom: -112px;
     }
 
+    /* important-link style  */
+
+    .important-link-container {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 86px);
+        gap: 10px;
+    }
+
+    .img2 {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .img2-title {
+        font-size: 10px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .img2 img {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
     /* footer part style  */
-    .footer{
+    .footer {
         padding: 20px;
     }
-    .footer-logo{
+
+    .footer-logo {
         padding-top: 100px;
         padding-bottom: 44px;
     }
+
     .footer-logo-title {
         text-align: center;
         padding-left: 5px;
     }
-    .footer-menu>ul{
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       padding-bottom: 30px;
+
+    .footer-menu>ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 30px;
     }
-    .footer-menu li{
+
+    .footer-menu li {
         padding-bottom: 35px;
         text-align: center;
     }
+
     .footer-menu li {
-        margin-right: 0; 
+        margin-right: 0;
     }
-    .footer-menu li a{
+
+    .footer-menu li a {
         font-size: 13px;
         margin-right: 0;
     }
-    .footer-link{
+
+    .footer-link {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding-bottom: 20px;
     }
+
     .footer-link a {
         text-align: center;
         padding-right: 0;
         margin-bottom: 24px;
     }
-    .footer-submenu-container{
+
+    .footer-submenu-container {
         padding: 0 20px;
     }
-    .footer-submenu>ul{
+
+    .footer-submenu>ul {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
     .footer-submenu li {
         margin-right: 0;
         padding-bottom: 38px;
         text-align: center;
     }
-    .footer-submenu a{
+
+    .footer-submenu a {
         font-size: 11px;
     }
+
     .footer-copyright p {
         font-size: 14px;
         width: 258px;
         margin: 0 auto;
     }
 }
-
-
