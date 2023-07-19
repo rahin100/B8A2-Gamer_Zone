@@ -145,7 +145,7 @@ body {
     padding: 21px 40px;
     border: 0;
     margin-top: 20px;
-    margin-right: 24px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -241,9 +241,10 @@ body {
 }
 
 /* online-games part style  */
-.online-games{
+.online-games {
     padding: 120px 0 120px 0;
 }
+
 .online-games-top-title {
     color: #0B0223;
     text-align: center;
@@ -298,7 +299,7 @@ body {
 .img1:hover .overlay {
     transform: translateX(0);
     transition: 1s;
-    
+
 }
 
 .ov-mid {
@@ -324,6 +325,107 @@ body {
     line-height: 30px;
 }
 
+/* play-instantly part style  */
+.play-instantly{
+    padding-bottom: 120px;
+}
+.play-instantly-container {
+    display: flex;
+    align-items: center;
+    padding: 0 240px;
+    gap: 150px;
+}
+
+.play-instantly-left {
+    width: 50%;
+}
+
+.play-instantly-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.play {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-instantly-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: auto;
+    width: 353px;
+}
+
+.play-instantly-right {
+    width: 50%;
+    position: relative;
+}
+
+.play-instantly-right img {
+    width: 100%;
+
+}
+
+.play-instantly-right-sub-img {
+    width: 200px;
+    height: 265px;
+    position: absolute;
+    left: -100px;
+    bottom: -90px;
+}
+/* ................................................. */
+.play-instantly1-container{
+    display: flex;
+    align-items: center;
+    padding: 0 240px;
+    gap: 150px;
+}
+.play-instantly1-left{
+    position: relative;
+}
+.play-instantly1-left img{
+    width: 100%;
+}
+.play-instantly1-right {
+    width: 50%;
+}
+.play-instantly1-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+.play1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.play-instantly1-description{
+    color: #534C64;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: auto;
+    width: 353px;
+}
+.play-instantly1-left-sub-img{
+    width: 200px;
+    height: 265px;
+    position: absolute;
+    right: -100px;
+    bottom: -90px;
+}
 /* responsive style  */
 /* for smaller device */
 @media screen and (max-width:576px) {
@@ -385,19 +487,25 @@ body {
     .banner-title {
         text-align: center;
     }
-
+    .banner-sub-title{
+        font-size: 30px;
+    }
+    .banner-title{
+        font-size: 70px;
+    }
     .banner-left-list>ul {
         text-align: center;
     }
 
     .button {
         text-align: center;
+        margin-left: 10px;
     }
 
     .signin,
     .go-rough {
-        margin-right: 0px;
-        padding-left: 30px;
+        font-size: 16px;
+        margin-right: 0;
     }
 
     /* we-are-gamer part  */
@@ -420,7 +528,9 @@ body {
     .ourpurpose {
         text-align: center;
     }
-
+    .we-are-gamer-right-title{ 
+        font-size: 40px;
+    }
     .we-are-gamer-right-description {
         text-align: center;
         text-align: justify;
@@ -428,24 +538,105 @@ body {
 
     .unleash {
         text-align: center;
-        font: 26px;
+        font-size: 17px;
     }
 
     /* online-games part style  */
-    .online-games{
-        padding: 50px 0 50px 0;
+    .online-games {
+        padding: 50px 0 5px 0;
     }
-    .online-games-img-container{
+    .online-games-top-title{
+        font-size: 22px;
+    }
+    .online-games-img-container {
         padding: 20px;
         flex-direction: column;
     }
-    .img1{
+    .online-games-top-description{
+        font-size: 16px;
+    }
+    .img1 {
         padding-bottom: 60px;
     }
-    .online-games-img-description{
+
+    .online-games-img-description {
         text-align: center;
     }
-    .img1 .overlay{
+
+    .img1 .overlay {
         bottom: 124px;
+    }
+
+    /* play-instantly part style */
+    .play-instantly-container {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .play-instantly-left,
+    .play-instantly-right {
+        width: 100%;
+    }
+
+    .play-instantly-title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .play-instantly-description {
+        text-align: center;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0 auto;
+        width: auto;
+    }
+    .play-instantly-right{
+        text-align: center;
+    }
+    .play-instantly-right img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .play-instantly-right-sub-img {
+        width: 120px;
+        height: 173px;
+        left: -5px;
+        bottom: -112px;
+    }
+    /* ........................... */
+    .play-instantly1-container {
+        padding: 20px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .play-instantly1-left,
+    .play-instantly1-right {
+        width: 100%;
+    }
+    .play-instantly1-title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .play-instantly1-description {
+        text-align: center;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0 auto;
+        width: auto;
+    }
+    .play-instantly1-left{
+        text-align: center;
+    }
+    .play-instantly1-left img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .play-instantly1-left-sub-img {
+        width: 120px;
+        height: 173px;
+        left: -5px;
+        bottom: -112px;
     }
 }
