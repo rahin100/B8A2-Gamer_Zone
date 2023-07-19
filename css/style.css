@@ -440,6 +440,77 @@ body {
     bottom: -90px;
 }
 
+/* career part style  */
+.career-container {
+    display: flex;
+    justify-content: center;
+    padding: 120px 240px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    gap: 100px;
+
+}
+
+.career-left {
+    width: 50%;
+}
+
+.career-left-title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.career-left-description {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 32px;
+    text-align: justify;
+}
+
+.career-objective-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.co {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.cc {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.seeall{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color:#fff;
+    padding: 21px 40px;
+    border-radius: 50px;
+    margin-top: 32px;
+    border: 0;
+    color: #FF42A5;
+
+}
+
+.career-right {
+    width: 50%;
+}
+.career-right img {
+    width: 100%;
+}
+
 /* important-link part style  */
 .important-link-container {
     display: flex;
@@ -613,6 +684,7 @@ body {
 /* responsive style  */
 /* for smaller device */
 @media screen and (max-width:576px) {
+
     /* nav part  */
     .nav-container {
         flex-direction: column;
@@ -846,7 +918,42 @@ body {
         right: -5px;
         bottom: -112px;
     }
-
+    /* career part style  */
+    .career-container {
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .career-left {
+        width: 100%;
+    }
+    .career-left-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .career-left-description {
+        font-size: 12px;
+    }
+    .career-objective-container{
+        gap: 20px;
+    }
+    .co {
+        font-size: 12px;
+    }
+    .cc{
+        font-size: 12px; 
+    }
+    .seeall{
+        font-size: 14px;
+        padding: 21px 15px;
+    }
+    .career-right {
+        width: 100%;
+    }
+    .career-right img{
+        padding-left: 20px;
+    }
     /* important-link style  */
 
     .important-link-container {
